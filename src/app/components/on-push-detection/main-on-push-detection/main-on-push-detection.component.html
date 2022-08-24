@@ -1,0 +1,19 @@
+<div
+  class="square"
+  [ngStyle]="{ backgroundColor: backgroundColor$ | async }"
+  #hello
+>
+  main-on-push-detection works!
+
+  <div>
+    <div>
+      Non Reactive Counter: {{ nonReactiveCounter }}
+      <button (click)="increaseNonReactiveCounter()">+</button>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <app-on-push-detection-angular></app-on-push-detection-angular>
+    <app-on-push-detection-angular></app-on-push-detection-angular>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div
+  class="square"
+  [ngStyle]="{ backgroundColor: backgroundColor$ | async }"
+  #hello
+>
+  main-default-detection works!
+
+  <div>
+    <div>
+      Non Reactive Counter: {{ nonReactiveCounter }}
+      <button (click)="increaseNonReactiveCounter()">+</button>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <app-default-detection-angular></app-default-detection-angular
+    ><app-default-detection-angular></app-default-detection-angular>
+  </div>
+</div>
