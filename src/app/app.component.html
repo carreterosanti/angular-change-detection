@@ -1,12 +1,23 @@
 <header></header>
 
-<main class="d-flex">
-  <app-main-default-detection></app-main-default-detection>
-  <app-main-on-push-detection></app-main-on-push-detection>
+<main>
+  <div class="dashboard">
+    <app-main-default-detection></app-main-default-detection>
+    <app-main-on-push-detection></app-main-on-push-detection>
 
-  <app-shared-counter></app-shared-counter>
+    <app-shared-counter></app-shared-counter>
+  </div>
+
+  <app-info></app-info>
 </main>
 
-<footer></footer>
+<footer>
+  <a
+    href="https://github.com/carreterosanti/angular-change-detection"
+    target="_blank"
+  >
+    Código fuente - Repositorio Github</a
+  >
+</footer>
 
 <router-outlet></router-outlet>

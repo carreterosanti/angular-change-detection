@@ -1,0 +1,53 @@
+.counter {
+  .title {
+    width: fit-content;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 11px;
+  }
+
+  .description {
+    margin-left: 0.25rem;
+    color: #4d4d4d;
+
+    i {
+      background-color: #d4d4d4;
+      color: black;
+      padding: 4px;
+      border-radius: 5px;
+    }
+  }
+
+  &__local-non-reactive {
+    .title {
+      background-color: #4158d0;
+      background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+      );
+    }
+  }
+  &__local-reactive {
+    .title {
+      background-color: #0093e9;
+      background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    }
+  }
+  &__shared-non-reactive {
+    .title {
+      background-color: #8bc6ec;
+      background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    }
+  }
+  &__shared-reactive {
+    .title {
+      background-color: #fbab7e;
+      background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+    }
+  }
+}

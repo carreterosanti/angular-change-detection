@@ -13,7 +13,6 @@
 }
 
 body {
-  padding: 3rem;
   margin: 0;
   background: #edc0bf;
   background: linear-gradient(90deg, #edc0bf 0, #c4caef 58%);
@@ -22,6 +21,10 @@ body {
 
 app-default-detection-angular,
 app-on-push-detection-angular {
+  .square {
+    margin: 1rem 0;
+  }
+
   .counter-container {
     app-counter {
       width: 50%;
@@ -57,4 +60,21 @@ h3 {
   font-size: 1.25rem;
   display: inline;
   margin-right: 0.5rem;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #560f60;
+  padding: 0.5rem;
+
+  a {
+    color: white;
+    &:hover {
+      color: #56ccf2;
+    }
+  }
 }

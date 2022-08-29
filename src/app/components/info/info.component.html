@@ -1,0 +1,26 @@
+<div class="info">
+  <h2>Explicación</h2>
+
+  <p>
+    El dashboard superior permite analizar visualmente la
+    <a
+      href="https://angular.io/api/core/ChangeDetectionStrategy"
+      target="_blank"
+      >detección de cambios de Angular</a
+    >
+    en componentes que poseen su estrategia de detección de cambios "Default" ó
+    "On Push".
+  </p>
+
+  <div class="info__counters">
+    <ng-container *ngFor="let counterDescription of countersInfo">
+      <app-counter-description
+        [title]="counterDescription.title"
+        [description]="counterDescription.description"
+        [code]="counterDescription.code"
+        [style]="counterDescription.style"
+      >
+      </app-counter-description>
+    </ng-container>
+  </div>
+</div>
