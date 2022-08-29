@@ -1,4 +1,5 @@
 import { Component, ElementRef, NgZone } from '@angular/core';
+import { SharedCounterService } from 'src/app/services/shared-counter.service';
 import { BaseAngularComponent } from '../../base-angular/base-angular.component';
 
 @Component({
@@ -8,8 +9,4 @@ import { BaseAngularComponent } from '../../base-angular/base-angular.component'
 })
 export class DefaultDetectionAngularComponent extends BaseAngularComponent {
   id: string = 'DefaultDetectionAngularComponent';
-
-  constructor(protected el: ElementRef, protected zone: NgZone) {
-    super(el, zone);
-  }
 }

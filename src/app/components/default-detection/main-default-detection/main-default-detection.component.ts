@@ -8,8 +8,4 @@ import { BaseAngularComponent } from '../../base-angular/base-angular.component'
 })
 export class MainDefaultDetectionComponent extends BaseAngularComponent {
   id: string = 'MainDefaultDetectionComponent';
-
-  constructor(protected el: ElementRef, protected zone: NgZone) {
-    super(el, zone);
-  }
 }

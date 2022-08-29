@@ -1,14 +1,35 @@
-<div
-  class="square"
-  [ngStyle]="{ backgroundColor: backgroundColor$ | async }"
-  #hello
->
-  on-push-detection-angular works!
+<div class="square">
+  <h3>Child On Push Detection Component</h3>
 
-  <div>
-    <div>
-      Non Reactive Counter: {{ nonReactiveCounter }}
-      <button (click)="increaseNonReactiveCounter()">+</button>
-    </div>
+  <app-life-cycle-list></app-life-cycle-list>
+
+  <div class="counter-container">
+    <app-counter
+      title="Local Non Reactive Counter"
+      [value]="nonReactiveCounter"
+      (increase)="increaseNonReactiveCounter()"
+      [style]="CounterStyle.LocalNonReactive"
+    ></app-counter>
+
+    <app-counter
+      title="Local Reactive Counter Observable"
+      [value]="reactiveCounter$ | async"
+      (increase)="increaseReactiveCounter()"
+      [style]="CounterStyle.LocalReactive"
+    ></app-counter>
+
+    <app-counter
+      title="Shared Non Reactive Counter Observable"
+      [value]="sharedNonReactiveCounter"
+      (increase)="increaseNonReactiveSharedCounter()"
+      [style]="CounterStyle.SharedNonReactive"
+    ></app-counter>
+
+    <app-counter
+      title="Shared Reactive Counter Observable"
+      [value]="sharedReactiveCounter$ | async"
+      (increase)="increaseReactiveSharedCounter()"
+      [style]="CounterStyle.SharedReactive"
+    ></app-counter>
   </div>
 </div>

@@ -1,10 +1,10 @@
 export enum BackgroundColor {
-  ngOnChange = '#293462',
-  ngOnInit = '#1CD6CE',
-  ngDoCheck = '#FEDB39',
-  ngAfterContentInit = '#D61C4E',
-  ngAfterContentChecked = '#CBA0AE',
-  ngAfterViewInit = '#F24A72',
-  ngAfterViewChecked = '#FDAF75',
-  ngOnDestroy = '#89CFFD',
+  ngOnChange = 'red',
+  ngOnInit = 'red',
+  ngDoCheck = 'red',
+  ngAfterContentInit = 'black',
+  ngAfterContentChecked = 'rgba(227, 255, 104, 1)',
+  ngAfterViewInit = 'red',
+  ngAfterViewChecked = 'rgba(255, 198, 77, 1)',
+  ngOnDestroy = 'red',
 }

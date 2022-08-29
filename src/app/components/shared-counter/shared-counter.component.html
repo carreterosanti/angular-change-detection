@@ -1,0 +1,14 @@
+<div class="shared-counter">
+  <app-counter
+    title="Shared Non Reactive Counter"
+    [value]="sharedNonReactiveCounterValue$ | async"
+    (increase)="increaseSharedNonReactiveCounter()"
+    [style]="CounterStyle.SharedNonReactive"
+  ></app-counter>
+  <app-counter
+    title="Shared Reactive Counter"
+    [value]="sharedReactiveCounterValue$ | async"
+    (increase)="increaseSharedReactiveCounter()"
+    [style]="CounterStyle.SharedReactive"
+  ></app-counter>
+</div>

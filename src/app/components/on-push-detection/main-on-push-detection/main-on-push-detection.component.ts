@@ -14,8 +14,4 @@ import { BaseAngularComponent } from '../../base-angular/base-angular.component'
 })
 export class MainOnPushDetectionComponent extends BaseAngularComponent {
   id: string = 'MainOnPushDetectionComponent';
-
-  constructor(protected el: ElementRef, protected zone: NgZone) {
-    super(el, zone);
-  }
 }

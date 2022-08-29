@@ -1,0 +1,46 @@
+.life-cycle-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 30px;
+
+  &__on-change {
+    background-color: #001219;
+    color: white;
+  }
+
+  &__on-init {
+    background-color: #005f73;
+    color: white;
+  }
+  &__do-check {
+    background-color: #0a9396;
+    color: white;
+  }
+
+  &__after-content-init {
+    background-color: #94d2bd;
+    color: black;
+  }
+  &__after-content-checked {
+    background-color: #e9d8a6;
+    color: black;
+  }
+  &__after-view-init {
+    background-color: #ee9b00;
+    color: white;
+  }
+  &__after-view-checked {
+    background-color: #ca6702;
+    color: white;
+  }
+  &__after-view-destroy {
+    background-color: #bb3e03;
+    color: white;
+  }
+
+  div {
+    margin: 0.25rem;
+    display: none;
+    height: fit-content;
+  }
+}

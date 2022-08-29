@@ -1,7 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .square {
   padding: 1rem;
-  border: 2px solid black;
   margin: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: relative;
+  border: 1px solid rgba(248, 248, 248, 0.9);
+}
+
+body {
+  padding: 3rem;
+  margin: 0;
+  background: #edc0bf;
+  background: linear-gradient(90deg, #edc0bf 0, #c4caef 58%);
+  font-family: "Lato", sans-serif;
+}
+
+app-default-detection-angular,
+app-on-push-detection-angular {
+  .counter-container {
+    app-counter {
+      width: 50%;
+      flex: 1 1;
+      height: 100%;
+    }
+  }
+}
+
+app-main-default-detection,
+app-main-on-push-detection {
+  .counter-container {
+    app-counter {
+      width: 50%;
+      flex: 1 1;
+      height: 100%;
+    }
+  }
+}
+
+.counter-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: 900;
+  color: #0d295f;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  display: inline;
+  margin-right: 0.5rem;
 }
