@@ -1,5 +1,5 @@
 # Angular Change Detection Analysis
-Dashboard de contadores que permite analizar visualmente la detección de cambios de Angular en componentes con estrategia de detección 'Default' ó 'On Push'
+Dashboard de contadores que permite analizar visualmente la detección de cambios de Angular en componentes con estrategia de detección 'Default' ó 'On Push' y la reactividad según como es implementada. 
 
 Link: https://angular-change-detection.web.app/
 
